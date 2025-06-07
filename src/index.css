@@ -1,0 +1,90 @@
+:root {
+  font-family: 'Segoe UI', Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #f1f1f1;
+  background-color: #0f0f0f; /* fundo escuro estilo garagem/showroom */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #00bcd4; /* ciano vibrante */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e3faf4; /* verde água ao passar o mouse */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #121212; /* fundo principal */
+  color: #e0e0e0;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.2;
+  margin: 0.5em 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border-color: #00bcd4;
+  background-color: #222;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #00bcd4;
+  outline-offset: 2px;
+}
+
+/* Claro: para fallback ou usuários que forçam modo claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #212121;
+    background-color: #ffffff;
+  }
+
+  a {
+    color: #0077b6;
+  }
+
+  a:hover {
+    color: #0096c7;
+  }
+
+  button {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+
+  button:hover {
+    background-color: #e0e0e0;
+  }
+}
